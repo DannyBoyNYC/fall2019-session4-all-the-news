@@ -5,8 +5,8 @@ const Nav = props => {
     <nav>
       <ul>
         {props.navItems.map(navItem => (
-          <li>
-            <a href={navItem.link}>{navItem.label}</a>
+          <li key={navItem}>
+            <a href={`#${navItem}`}>{navItem}</a>
           </li>
         ))}
       </ul>
